@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Fairy Player</title>
+		<link rel="stylesheet" type="text/css" href="files/css/StyleSheet.css">
+		<link rel="stylesheet" type="text/css" href="files/icons/entypo/css/entypo.css">
+		<script type="text/javascript" src="files/js/JavaScript.js"></script>
+		<script type="text/javascript" src="files/js/Draggable.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body onload="runPlayer();">
+		<div id="skin">
+			<div class="header">
+				<ul class="top">
+					<li class="icon"><img src="files/images/360.png" width="23px"></li>
+					<li class="title">Solgi Media Player</li>
+				</ul>
+				<ul class="bottom">
+					<li>Media</li>
+					<li>Playback</li>
+					<li>Audio</li>
+					<li>Video</li>
+					<li>Subtitle</li>
+					<li>Tools</li>
+					<li>View</li>
+					<li>Help</li>
+				</ul>
+			</div>
+			<video id="myMovie" width="850" height="478px" poster="files/images/video_back.jpg">
+				<source src="file:///C://Users/Isaac%20Quaye%20Kwesi/Desktop/others/Adele%20Songs%20-%20Life%20For%20Rent%20Song%20Lyrics,%20Music%20Video.WEBM" type="video/WEBM">
+				<source src="Moana.mp4" type="video/mp4">
+				<source src="file:///C://Users/Isaac%20Quaye%20Kwesi/Desktop/others/adele_someone_like_you_h264_67427.mp4" type="video/mp4">
+				<source src="file:///C://Users/Isaac%20Quaye%20Kwesi/Desktop/others/am_not_afraid_frank_edwards_hi_79310.3gp" type="video/3gp">
+				<source src="file:///C://Users/Isaac%20Quaye%20Kwesi/Desktop/others/By%20your%20spirit%20God.mp4" type="video/mp4">
+				<source src="file:///C://Users/Isaac%20Quaye%20Kwesi/Desktop/others/Chasing%20You%20__%20Jenn%20Johnson%20&%20Bethel%20Music%20__%20Tides%20Official%20Lyric%20Video.MP4" type="video/mp4">
+				<source src="file:///C:/Users/Isaac%20Quaye%20Kwesi/Desktop/others/Amazing%20Grace%20Hillsong.mp4" type="video.mp4">
+				<source src="file:///C:/Users/Isaac%20Quaye%20Kwesi/Desktop/others/OJ%20-%20Maye%20se%20mo%20pen.WEBM" type="video/WEBM">
+			</video>
+			<nav>
+				<div class="init-cont">
+					<span class="control-text" id="leftDash" style="float:left">00:00</span>
+					<div id="defaultbar">
+						<div id="progressbar">
+							<span id="disc"></span>
+						</div>
+					</div>
+					<span class="control-text" id="rightDash" style="float:right; text-align: right;">0:00:00</span>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="player-controls">
+					<div class="left-controls">
+						<button type="button" id="playButton"><span class="entypo-play"></span></button>
+						<button type="button" id="previousButton"><span class="entypo-fast-backward"></span></button>
+						<button type="button" id="nextButton"><span class="entypo-fast-forward"></span></button>
+						<button type="button" id="fullscreenButton"><span class="entypo-resize-full"></span></button>
+						<button type="button" id="loopButton"><span class="entypo-loop"></span></button>
+					</div>
+					<div class="right-controls">
+						<span id="volume_icon" class="entypo-sound" style="color: #fff"></span>
+						<div id="volume_bar">
+							<span id="volume_slider"></span>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</body>
+</html>
